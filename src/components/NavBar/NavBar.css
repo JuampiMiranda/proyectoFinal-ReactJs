@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #23d4c6;
+    box-shadow: 0 2px 3px 0 #474747;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+li {
+    display: inline-block;
+    margin: 1rem;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.imgGima {
+    width: 20rem;
+}
+
+.category {
+    background-color: #23d4c6;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
