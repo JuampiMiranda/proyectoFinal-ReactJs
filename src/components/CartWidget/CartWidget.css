@@ -1,9 +1,9 @@
 .imgCarrito {
-    width: 4rem;
+    width: 3rem;
 }
 
-.itemsIndicador {
-    font-size: 3rem;
+.Indicador {
+    font-size: 1.7rem;
     font-weight: bold;
     color: black;
 }

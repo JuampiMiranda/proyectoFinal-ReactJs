@@ -7,23 +7,23 @@ const NavBar = () => {
 
   return (
     <header>
-        <Link to={"/"}>
-          <img className="imgGima" src={imgGima} alt="Logo Gima" />
-        </Link>
+      <Link to={"/"}>
+        <img className="imgGima" src={imgGima} alt="Logo Gima" />
+      </Link>
 
-        <nav>
-            <ul>
-                <li>
-                  <NavLink className="category" activeClassName="active" to={"/categoria/2"}> Fisioterapia </NavLink>
-                </li>
+      <nav>
+        <ul>
+          <li>
+            <NavLink className="category" to={"/categoria/2"}> Fisioterapia </NavLink>
+          </li>
 
-                <li>
-                  <NavLink className="category" activeClassName="active" to={"/categoria/3"}> Kinesiología </NavLink>
-                </li>
-            </ul>
-        </nav>
+          <li>
+            <NavLink className="category" to={"/categoria/3"}> Kinesiología </NavLink>
+          </li>
+        </ul>
+      </nav>
 
-        <CartWidget />
+      <CartWidget />
 
     </header>
   )

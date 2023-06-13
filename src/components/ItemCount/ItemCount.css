@@ -1,5 +1,18 @@
-p {
-    font-size: 24px;
+.buttonCount{
+
+    background-color: #23d4c6;
+    font-size: 0.938rem;
+    border-radius: 0.313rem;
+    width: 3rem;
+    margin: 1rem;
+}
+
+.buttonCount1{
+
+    padding: 0.3rem;
+    background-color: #23d4c6;
+    font-size: 0.938rem;
     font-weight: bold;
-    margin: 0 10px;
+    border-radius: 0.313rem;
+    width: 9rem;
 }

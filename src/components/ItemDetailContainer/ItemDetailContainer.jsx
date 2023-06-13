@@ -26,6 +26,7 @@ const ItemDetailContainer = () => {
         <div>
             <ItemDetail {...producto} />
         </div>
+        
     )
 }
 

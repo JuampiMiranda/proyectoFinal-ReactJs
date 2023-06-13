@@ -48,7 +48,7 @@ const Checkout = () => {
             })
             .catch((error) => {
                 console.log("Error al crear la orden", error);
-                setError("Se produjo un error al crear la orden, vuelva más tarde");
+                setError("Error al crear la orden, vuelva más tarde");
             })
 
     }
@@ -58,48 +58,47 @@ const Checkout = () => {
             <form onSubmit={manejadorSubmit} className="formulario">
 
                 {carrito.map(producto => (
-                    <div key={producto.item.id}>
+                    <div className="detalleCheck" key={producto.item.id}>
                         <p> {producto.item.nombre} x {producto.cantidad} </p>
                         <p>Precio: $ {producto.item.precio} </p>
                         <hr />
                     </div>
                 ))}
-                <hr />
 
                 <div className="form-group">
-                    <label htmlFor=""> Nombre </label>
+                    <label htmlFor=""> Nombre: </label>
                     <input type="text" value={nombre} onChange={(e) => setNombre(e.target.value)} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor=""> Apellido </label>
+                    <label htmlFor=""> Apellido: </label>
                     <input type="text" value={apellido} onChange={(e) => setApellido(e.target.value)} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor=""> Telefono</label>
+                    <label htmlFor=""> Telefono: </label>
                     <input type="text" value={telefono} onChange={(e) => setTelefono(e.target.value)} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor=""> Email </label>
+                    <label htmlFor=""> Email: </label>
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor=""> Email Confirmación </label>
+                    <label htmlFor=""> Confirmación de email: </label>
                     <input type="email" value={emailConfimarcion} onChange={(e) => setEmailConfirmacion(e.target.value)} />
                 </div>
 
                 {
-                    error && <p style={{ color: "red" }}> {error} </p>
+                    error && <p style={{ color: "tomato" }}> {error} </p>
                 }
 
-                <button className="miBtn" type="submit"> Finalizar Orden </button>
+                <button className="buttonCart3" type="submit"> Finalizar Orden </button>
 
                 {
                     ordenId && (
-                        <strong className="orderId">¡Gracias por tu compra! Tu número de orden es: {ordenId} </strong>
+                        <strong className="order">¡Gracias por comprar en GIMA Market! Tu número de orden es: {ordenId} </strong>
                     )
                 }
             </form>
